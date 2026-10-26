@@ -1,0 +1,86 @@
+cyberguard-project/
+├── cyberguard-backend/
+│   ├── esp32/
+│   │   └── cyberguard_esp32.ino
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/
+│   │       │   └── com/
+│   │       │       └── cyberguard/
+│   │       │           ├── config/
+│   │       │           │   └── SecurityConfig.java
+│   │       │           ├── controller/
+│   │       │           │   ├── AlertController.java
+│   │       │           │   ├── AuthController.java
+│   │       │           │   ├── DashboardController.java
+│   │       │           │   ├── DeviceController.java
+│   │       │           │   └── LaptopController.java
+│   │       │           ├── dto/
+│   │       │           │   ├── AuthResponse.java
+│   │       │           │   ├── LaptopRequest.java
+│   │       │           │   ├── LoginRequest.java
+│   │       │           │   ├── MovementAlertRequest.java
+│   │       │           │   └── RegisterRequest.java
+│   │       │           ├── exception/
+│   │       │           │   └── GlobalExceptionHandler.java
+│   │       │           ├── model/
+│   │       │           │   ├── AlertEvent.java
+│   │       │           │   ├── Laptop.java
+│   │       │           │   └── User.java
+│   │       │           ├── repository/
+│   │       │           │   ├── AlertEventRepository.java
+│   │       │           │   ├── LaptopRepository.java
+│   │       │           │   └── UserRepository.java
+│   │       │           ├── security/
+│   │       │           │   ├── JwtAuthFilter.java
+│   │       │           │   └── JwtUtil.java
+│   │       │           ├── service/
+│   │       │           │   ├── AlertService.java
+│   │       │           │   ├── AuthService.java
+│   │       │           │   └── LaptopService.java
+│   │       │           └── CyberGuardApplication.java
+│   │       └── resources/
+│   │           └── application.properties
+│   ├── pom.xml
+│   └── README.md
+├── cyberguard-frontend/
+│   ├── public/
+│   │   └── favicon.svg
+│   ├── src/
+│   │   ├── api/
+│   │   │   ├── alertApi.js
+│   │   │   ├── authApi.js
+│   │   │   ├── axiosClient.js
+│   │   │   └── laptopApi.js
+│   │   ├── components/
+│   │   │   ├── AlertItem.jsx
+│   │   │   ├── AuthField.jsx
+│   │   │   ├── Icon.jsx
+│   │   │   ├── LaptopCard.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── PageHeader.jsx
+│   │   │   ├── ProtectedRoute.jsx
+│   │   │   └── SocialButtons.jsx
+│   │   ├── context/
+│   │   │   └── AuthContext.jsx
+│   │   ├── pages/
+│   │   │   ├── AlertHistory.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Home.jsx
+│   │   │   ├── Laptops.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Profile.jsx
+│   │   │   ├── Register.jsx
+│   │   │   └── Settings.jsx
+│   │   ├── styles/
+│   │   │   └── index.css
+│   │   ├── utils/
+│   │   │   └── alerts.js
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── index.html
+│   ├── package.json
+│   ├── README.md
+│   └── vite.config.js
+└── docs/
+    └── CyberGuard_Neon_Security_Dashboard_Showcase.png
